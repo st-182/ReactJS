@@ -1,0 +1,14 @@
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+
+  background-color: wheat;
+  color: #3a3a3a;
+
+  font-size: 1em;
+}
+button:hover {
+  background-color: honeydew;
+}
