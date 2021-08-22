@@ -1,35 +1,44 @@
 import React, { useState, useEffect } from "react";
 import CounterButton from "../Hooks/CounterButton";
 
-const Counter = () => {
+const Counter = ({ cartCount, priceBasedOnSize, setCartItem }) => {
   //state
-  const [count, setCount] = useState(0);
-  const [message, setMessage] = useState("");
+  const [count, setCount] = useState(cartCount);
+  // const [message, setMessage] = useState("");
 
   //side effects (mounting updating, unmount)
   let num = 0;
   useEffect(() => {
-    console.log(`one`, num++);
+    // console.log(`one`, num++);
   }, []);
 
   //functions
   const increment = () => {
-    setCount(count + 1);
+    if (count < 100) {
+      setCount(count + 1);
+    }
   };
   const decrement = () => {
-    setCount(count - 1);
+    if (count > 0) {
+      setCount(count - 1);
+    }
   };
-  const showGreeting = () => {
-    setMessage("AHAHHAHAHAHAHAHAHHA");
-  };
+  // const showGreeting = () => {
+  //   setMessage("AHAHHAHAHAHAHAHAHHA");
+  // };
+  console.log(priceBasedOnSize);
   return (
-    <div>
-      <h2>Counter 1</h2>
-      <p>Count: {count}</p>
-      <CounterButton text="+1" action={increment} />
-      <CounterButton text="-1" action={decrement} />
-      <p>{message}</p>
-      <CounterButton text="-Show Greeting" action={showGreeting} />
+    <div className="button-add-to-cart">
+      <div className="count-cart">
+        <CounterButton text="-" action={decrement} />
+        <p>{count}</p>
+        <CounterButton text="+" action={increment} />
+      </div>
+      <button className="button " onClick={() => setCartItem(count)}>
+        Add to cart
+      </button>
+      {/* <p>{message}</p> */}
+      {/* <CounterButton text="-Show Greeting" action={showGreeting} /> */}
     </div>
   );
 };

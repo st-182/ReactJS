@@ -4,6 +4,7 @@ const User = ({ user }) => {
   return (
     <div className="user">
       <img src={user.avatar_url} alt={user.login} />
+      <p>{user.login}</p>
     </div>
   );
 };
