@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 100%;
+}
+.h2Element {
+  font-size: 40px;
+  padding: 10px;
+}
+.pElement {
+  padding: 10px;
+}
+.button {
+  font-family: "SymphonieGrotesque-Regular", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #00b373;
+  border-radius: 0px 0px 0px 0px;
+  padding: 20px 25px 20px 25px;
+}
+.a {
+  font-family: "SymphonieGrotesque-Regular", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  fill: #0a0203;
+  color: #0a0203;
+  background-color: rgba(0, 179, 115, 0);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px 0px 5px 0px;
+}

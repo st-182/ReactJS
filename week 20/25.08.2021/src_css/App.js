@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Card from "./AddingStylesInCreateReactApp/StyledComponents/Card";
-import Cards from "./AddingStylesInCreateReactApp/BEM/Cards/Cards";
+import Cards from "./AddingStylesInCreateReactApp/BEM/Cards";
 import CardBootstrap from "./AddingStylesInCreateReactApp/Bootstrap/Cards";
 import Hero from "./AddingStylesInCreateReactApp/CSSmodules/Hero/Hero";
 import StyledHero from "./AddingStylesInCreateReactApp/StyledComponents/Hero";
@@ -32,11 +31,7 @@ function App() {
       {/* CSS Modules */}
       {/* <Hero /> */}
       {/* <StyledHero /> */}
-
-      {/* HOME */}
-
-      {/* <CardBootstrap /> */}
-      <Card />
+      <CardBootstrap />
     </main>
   );
 }

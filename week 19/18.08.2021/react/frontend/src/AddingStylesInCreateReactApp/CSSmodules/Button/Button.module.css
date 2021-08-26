@@ -1,0 +1,11 @@
+.primary {
+  background-color: chartreuse;
+}
+.secondary {
+  background: crimson;
+}
+.custom {
+  padding: 20px;
+  background: transparent;
+  border: 1px solid cadetblue;
+}
