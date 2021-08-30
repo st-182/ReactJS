@@ -3,3 +3,4 @@ dist
 .cashe
 package-lock.json
 .env
+.7z
