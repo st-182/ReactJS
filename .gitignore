@@ -3,4 +3,9 @@ dist
 .cashe
 package-lock.json
 .env
+
 .7z
+/**/node_modules
+/**/**/node_modules
+**/node_modules
+**/**/node_modules
