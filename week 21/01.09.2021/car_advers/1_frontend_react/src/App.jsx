@@ -19,6 +19,8 @@ const reducer = (state, action) => {
       return { user: action.payload };
     case "LOGOUT":
       return { user: "" };
+    case "REGISTER":
+      return { user: action.payload };
 
     default:
       return state;

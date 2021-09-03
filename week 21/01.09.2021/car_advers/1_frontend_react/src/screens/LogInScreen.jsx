@@ -1,9 +1,19 @@
 import React, { useContext, useRef, useState } from "react";
 import { UserContext } from "../App";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const LogInScreen = () => {
-  const { state } = useContext(UserContext);
+  //Hooks
+  // state
+  // -global
+  const { state, dispatch } = useContext(UserContext);
+
+  // -local
+  // --login form
+  const [logIn, setLogIn] = useState({});
+  // ------ signup form
+
   const user = useRef("");
 
   const submitedForm = (e) => {
